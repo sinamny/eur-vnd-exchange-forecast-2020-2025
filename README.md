@@ -3,20 +3,17 @@
 Dự án sử dụng các mô hình học máy và chuỗi thời gian để phân tích, trực quan hóa và dự đoán tỷ giá EUR/VND dựa trên dữ liệu lịch sử từ năm 2020 đến 2025.  
 Các mô hình được triển khai gồm:
 
-- ARIMA – Mô hình thống kê truyền thống dùng để dự đoán dữ liệu chuỗi thời gian dựa trên các quan sát trong quá khứ.
+- ARIMA – Mô hình thống kê dự đoán chuỗi thời gian dựa trên dữ liệu quá khứ.
 
-- LSTM – Mạng nơ-ron sâu có khả năng ghi nhớ thông tin dài hạn, rất hiệu quả cho dữ liệu chuỗi phức tạp.
+- LSTM – Mạng nơ-ron sâu ghi nhớ thông tin dài hạn, phù hợp với chuỗi phức tạp.
 
-- XGBoost – Thuật toán boosting nhanh, mạnh, dùng nhiều cây quyết định để nâng cao độ chính xác.
+- XGBoost – Thuật toán boosting với nhiều cây quyết định, giúp tăng độ chính xác.
 
-- Random Forest – Tập hợp nhiều cây quyết định được xây dựng ngẫu nhiên, giúp cải thiện độ ổn định và tránh overfitting.
----
+- Random Forest – Tập hợp các cây quyết định ngẫu nhiên, cải thiện độ ổn định và tránh quá khớp.
 
 ## Giới thiệu
 
-Tỷ giá ngoại tệ luôn là một yếu tố quan trọng trong tài chính, đầu tư và thương mại quốc tế.  
-Dự án này nhằm cung cấp một công cụ dự đoán tỷ giá EUR/VND trong ngắn hạn dựa trên các mô hình học máy hiện đại và mô hình chuỗi thời gian truyền thống.  
-Kết quả giúp người dùng có cái nhìn rõ hơn về xu hướng tỷ giá và hỗ trợ ra quyết định tài chính.
+Tỷ giá ngoại tệ luôn là một yếu tố quan trọng trong tài chính, đầu tư và thương mại quốc tế. Dự án này nhằm cung cấp một công cụ dự đoán tỷ giá EUR/VND trong ngắn hạn dựa trên các mô hình học máy hiện đại và mô hình chuỗi thời gian truyền thống. Kết quả giúp người dùng có cái nhìn rõ hơn về xu hướng tỷ giá và hỗ trợ ra quyết định tài chính.
 
 
 ## Quy trình thực hiện
@@ -34,7 +31,7 @@ Kết quả giúp người dùng có cái nhìn rõ hơn về xu hướng tỷ g
 6. Dự đoán 7 ngày tiếp theo
    - Dự đoán và trực quan hóa tỷ giá trong tương lai ngắn hạn.
 
----
+
 
 ## Cấu trúc thư mục
 
@@ -59,5 +56,5 @@ Kết quả giúp người dùng có cái nhìn rõ hơn về xu hướng tỷ g
 │   └── xgboost.ipynb            # Mô hình XGBoost
 │
 ├── .gitignore
-├── requirements.txt
+├── requirements.txt # Thư viện cần thiết
 └── README.md
